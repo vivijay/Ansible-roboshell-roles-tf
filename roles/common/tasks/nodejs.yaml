@@ -1,0 +1,7 @@
+  - name: set up npm resource 
+    ansible.builtin.shell: "curl -sL https://rpm.nodesource.com/setup_lts.x | bash"
+
+  - name: Install node js 
+    ansible.builtin.yum:
+      name: nodejs
+      state: installed

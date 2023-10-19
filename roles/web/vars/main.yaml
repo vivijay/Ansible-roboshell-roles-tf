@@ -1,0 +1,5 @@
+CATALOGUE_HOST: catalogue.learndevcloud.online
+USER_HOST: user.learndevcloud.online
+SHIPPING_HOST: shipping.learndevcloud.online
+CART_HOST: cart.learndevcloud.online
+PAYMENT_HOST: payment.learndevcloud.online
