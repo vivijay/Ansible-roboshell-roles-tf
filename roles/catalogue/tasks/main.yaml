@@ -5,7 +5,7 @@
 - name: print app version
   debug:
     msg: "APP version is : {{app_version}}"
-    
+
 - name: Install nodejs
   ansible.builtin.import_role:
     name: common
@@ -21,10 +21,11 @@
   args:
     chdir: /app
 
-- name: Load schema
-  ansible.builtin.import_role:
-    name: common
-    tasks_from: load-mongo-schema
+# we are doing this as part of MongoDB itself
+# - name: Load Schema
+#   ansible.builtin.import_role:
+#     name: common
+#     tasks_from: load-mongo-schema
 
 - name: Systemd set up
   ansible.builtin.import_role:
